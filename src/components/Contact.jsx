@@ -11,9 +11,9 @@ export default function Contact() {
       href: 'mailto:minhazulislammaain2009@gmail.com'
     },
     {
-      label: 'github.com/unusual', // Assuming github handle
+      label: 'github.com/unusual-0', // Assuming github handle
       icon: <Terminal size={18} strokeWidth={1.5} />,
-      href: 'https://github.com/unusual'
+      href: 'https://github.com/unusual-0'
     },
     {
       label: '@enma.minz',
