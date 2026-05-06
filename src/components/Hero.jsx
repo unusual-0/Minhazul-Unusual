@@ -79,7 +79,7 @@ export default function Hero() {
               visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.4, 0, 0.2, 1] } }
             }}
           >
-            I design and build frontend experiences that feel intentional — from architecture to the last pixel. Somewhere between engineering precision and creative instinct.
+            I build real things and ship them — solo, end-to-end. Web apps, edited videos, scripts, full products. I combine code and AI the way most people use just one. Based in Bangladesh, working for whoever needs it done right.
           </motion.p>
 
           <motion.div 

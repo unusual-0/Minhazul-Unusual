@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Video, PenTool, Layout, Rocket } from 'lucide-react';
+import { Video, PenTool, Layout, Rocket, Monitor } from 'lucide-react';
 import { soundEngine } from '../utils/soundEngine';
 import ContactModal from './ContactModal';
 import styles from './Services.module.css';
@@ -10,24 +10,29 @@ export default function Services() {
   const [selectedService, setSelectedService] = useState('');
   const services = [
     {
-      title: 'Cinematic Post-Production',
-      description: 'Master-level video engineering specializing in short-form virality and long-form cinematic storytelling. We handle the full spectrum of motion direction and high-fidelity editing.',
-      icon: <Video size={24} />,
-    },
-    {
-      title: 'Digital Content Strategy',
-      description: 'Architecting viral reaction content and high-retention scripts. We merge creative writing with data-driven content creation for maximum digital impact.',
-      icon: <PenTool size={24} />,
-    },
-    {
-      title: '3D Interactive Engineering',
-      description: 'Building professional-grade 3D interactive web systems. We specialize in merging fluid motion with technical precision to create intentional digital brand interfaces.',
+      title: 'Frontend Web Development',
+      description: 'HTML, CSS, JS builds — clean, fast, no bloat. PWAs with offline support, Firebase integration, API-connected apps. I use AI to build faster, not to replace the craft.',
       icon: <Layout size={24} />,
     },
     {
-      title: 'AI Development Mentorship',
-      description: 'Consultancy on building state-of-the-art websites using advanced AI integration. We teach the bridge between prompt engineering and professional web architecture.',
+      title: 'Video Editing',
+      description: 'Short-form content, long-form documentaries, blog videos. Full edit from raw footage to final export. Cinematic pacing and cuts — done with intent.',
+      icon: <Video size={24} />,
+    },
+    {
+      title: 'Script & Content Writing',
+      description: 'High-quality scripts for video content, brand messaging, and digital storytelling. Written to hold attention, not just fill space.',
+      icon: <PenTool size={24} />,
+    },
+    {
+      title: 'AI Workflow & Mentorship',
+      description: 'I teach people how to actually use AI to build things — websites, tools, workflows. Free guidance to start. Paid remote sessions for depth.',
       icon: <Rocket size={24} />,
+    },
+    {
+      title: 'PC Building & Setup',
+      description: 'Hardware selection, full PC builds, system setup and management. Remote guidance — I walk you through it step by step. Free or paid depending on depth.',
+      icon: <Monitor size={24} />,
     }
   ];
 
@@ -42,7 +47,7 @@ export default function Services() {
           transition={{ duration: 0.6 }}
         >
           <span className={styles.label}>Capabilities</span>
-          <h2 className={styles.sectionTitle}>What We Do</h2>
+          <h2 className={styles.sectionTitle}>What I Do</h2>
         </motion.div>
 
         <div className={styles.grid}>

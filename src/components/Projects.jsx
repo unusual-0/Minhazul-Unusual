@@ -8,27 +8,33 @@ export default function Projects() {
   const projects = [
     {
       title: 'Agarwood Business System',
-      description: 'Advanced business management PWA with offline-first architecture, IndexedDB integration, and real-time Google Sheets synchronization.',
-      tags: ['PWA', 'Vanilla JS', 'Business'],
+      description: 'Business management system built to replace paper records for a family agarwood operation. Offline-first with IndexedDB, syncs live to Google Sheets. Shipped and in use.',
+      tags: ['PWA', 'Offline-First', 'Business'],
       link: 'https://unusual-0.github.io/test1-AW/'
     },
     {
-      title: 'Nadi X Zahid Brand',
-      description: 'High-end personal brand interface designed for premium digital presence and creative storytelling.',
-      tags: ['Branding', 'Motion', 'UI/UX'],
+      title: 'Quorum',
+      description: 'Real-time web chat app with Firebase as the backend. Personal project — built to learn full-stack thinking from scratch. Now live.',
+      tags: ['Firebase', 'Real-time', 'Experimental'],
+      link: 'https://unusual-0.github.io/Quorum/'
+    },
+    {
+      title: 'Nadi x Zahid Brand',
+      description: 'Personal brand interface for a creative identity. High-end visual presence with intentional layout and motion direction.',
+      tags: ['Branding', 'UI/UX', 'Frontend'],
       link: 'https://gammyxplood.github.io/NXJ-269/'
     },
     {
-      title: 'Smiley Cake Studio',
-      description: 'Commercial website with custom cake builder UI and automated notification system.',
-      tags: ['React', 'E-commerce', 'UI/UX'],
-      link: '#'
+      title: 'The Trio of Dream',
+      description: 'Collaborative portfolio for a creative collective. Built to feel like a world, not just a page — dark, immersive, intentional.',
+      tags: ['Creative', 'Portfolio', 'Collab'],
+      link: 'https://minhazul-islam-maain1.github.io/The-Trio-of-Dream/index.html'
     },
     {
-      title: 'The Trio of Dream',
-      description: 'Collaborative cinematic portfolio for a creative collective. Focused on dark, immersive visual experiences.',
-      tags: ['Creative', 'Portfolio', 'Frontend'],
-      link: 'https://minhazul-islam-maain1.github.io/The-Trio-of-Dream/index.html'
+      title: 'QR Code Generator',
+      description: 'Clean, fast QR generator. No libraries, no bloat — pure JavaScript. Built and shipped as a standalone utility tool.',
+      tags: ['Tool', 'Vanilla JS', 'Utility'],
+      link: 'https://unusual-0.github.io/QR-generator/'
     }
   ];
 

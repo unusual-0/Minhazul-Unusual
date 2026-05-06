@@ -7,22 +7,22 @@ export default function About() {
   const capabilities = [
     {
       title: 'Development',
-      desc: 'HTML, CSS, JavaScript — pure, no-framework mastery. Progressive Web Apps, offline-first architecture, IndexedDB, Google Sheets API integration. Clean, semantic code.',
+      desc: 'HTML, CSS, JavaScript — no-framework builds that actually ship. PWAs, offline-first architecture, Firebase backend, Google Sheets API integration. I also use AI tools to build faster without cutting corners.',
       icon: <Code size={20} strokeWidth={1.5} />
     },
     {
       title: 'Creative',
-      desc: 'Video editing, visual storytelling, motion direction. Dark cinematic aesthetic. I treat design as a language, not decoration.',
+      desc: 'Video editing across formats — short-form content, long-form documentaries, blog videos. Script writing built for retention. Dark cinematic aesthetic runs through everything I make.',
       icon: <Film size={20} strokeWidth={1.5} />
     },
     {
-      title: 'Technical Architecture',
-      desc: 'System thinking for real-world products — not just UIs but how they fit into workflows. Built business management systems, Minecraft server administration, multi-platform project management.',
+      title: 'Systems & Hardware',
+      desc: 'PC building, hardware selection, full system setup and management. Real-world system thinking — from business management tools to Minecraft server administration. I know how things fit together.',
       icon: <Layers size={20} strokeWidth={1.5} />
     },
     {
-      title: 'Strategy & Execution',
-      desc: 'Entrepreneurially oriented. Freelance client work, long-term planning, turning ideas into shipped products. I don\'t just build — I think about why.',
+      title: 'Ship & Deliver',
+      desc: 'Freelance projects for real clients, products built for real problems. I plan, build, and deliver — solo. Not just technically, but knowing what the client actually needs.',
       icon: <Target size={20} strokeWidth={1.5} />
     }
   ];
