@@ -1,0 +1,112 @@
+.servicesSection {
+  padding: 160px 0 120px 0;
+  background-color: transparent;
+  position: relative;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.header {
+  margin-bottom: 64px;
+}
+
+.label {
+  font-family: var(--font-sans);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--text-secondary);
+  display: block;
+  margin-bottom: 12px;
+}
+
+.sectionTitle {
+  font-family: var(--font-sans);
+  font-size: 40px;
+  font-weight: 500;
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.serviceCard {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  padding: 48px;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.serviceCard::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(180, 120, 255, 0.1) 0%, transparent 70%);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  pointer-events: none;
+}
+
+.serviceCard:hover {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: rgba(180, 120, 255, 0.3);
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.serviceCard:hover::before {
+  opacity: 1;
+}
+
+.iconWrapper {
+  width: 56px;
+  height: 56px;
+  background: linear-gradient(135deg, rgba(180, 120, 255, 0.2), rgba(120, 200, 255, 0.2));
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(180, 120, 255, 1);
+  margin-bottom: 32px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.serviceTitle {
+  font-family: var(--font-sans);
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--text-primary);
+  margin-bottom: 12px;
+}
+
+.serviceDesc {
+  font-family: var(--font-sans);
+  font-size: 15px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .sectionTitle {
+    font-size: 32px;
+  }
+  .serviceCard {
+    padding: 24px;
+  }
+}

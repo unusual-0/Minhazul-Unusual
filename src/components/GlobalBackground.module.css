@@ -1,0 +1,55 @@
+.bgContainer {
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  background-color: var(--bg-main);
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.videoWrapper {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.bgVideo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scaleY(-1);
+  filter: grayscale(0.8) contrast(1.1) brightness(0.8);
+  opacity: 0.6; /* Slightly muted for rest of site */
+}
+
+.radialOverlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, transparent 0%, rgba(11, 11, 12, 0.8) 100%);
+}
+
+.linearOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, transparent 0%, var(--bg-main) 100%);
+}
+
+@keyframes slowDrift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animatedGradient {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, 
+    rgba(124, 140, 255, 0.12), 
+    rgba(180, 124, 255, 0.1), 
+    rgba(124, 140, 255, 0.08)
+  );
+  background-size: 200% 200%;
+  animation: slowDrift 20s ease-in-out infinite;
+  mix-blend-mode: screen;
+}
