@@ -39,6 +39,12 @@
   gap: 24px;
 }
 
+.grid > *:last-child:nth-child(odd) {
+  grid-column: span 2;
+  max-width: calc(50% - 12px);
+  margin: 0 auto;
+}
+
 .serviceCard {
   background: rgba(255, 255, 255, 0.02);
   border: 1px solid rgba(255, 255, 255, 0.05);
